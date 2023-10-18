@@ -1,0 +1,538 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------------------------------------------------------*/
+:root{
+  --font-family: 'Cambo', serif;
+  --body-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  width: 100%;
+  height: 3500px;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.section
+{
+  width: 100%;
+}
+.header_section {
+  height: 20%;
+  background-image: url('../recursos/garage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 0;
+}
+
+
+pre
+{
+  font-family: var(--font-family);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 0px 0;
+}
+
+.logo {
+  padding: 20px 45px 20px 45px;
+  font-size: 30px;
+  font-weight: bolder;
+
+}
+
+.options {
+  display: flex;
+}
+
+.options a {
+  text-decoration: none;
+  color: white;
+  margin-right: 65px;
+  font-size: 20px;
+}
+
+.header-content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.title-container {
+  width: 100%;
+  height: 100%;
+}
+.title-container .title {
+  padding: 150px 65px 150px 65px;
+  position:relative;
+  font-family: var(--body-family);
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 64px;
+  letter-spacing: -1.28px;
+  line-height: 64px;
+}
+
+.title-container .title-principal {
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.title-container{
+  font-family: 'Roboto-Light', sans-serif;
+  font-size: 48px;
+  letter-spacing: -0.96px;
+  line-height: 80px;
+}
+
+main
+{
+  width: 100%;
+  height: 100%;
+  background-color: #DEDEDE;
+  position: relative;
+}
+.h1-container{
+  height: 4%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: var(--body-family);
+  font-weight: 1000;
+  color: #000000;
+  font-size: 50px;
+  letter-spacing: -1.1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+.bmw_container {
+  height: 19%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;
+}
+
+.bmw_img
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.audi_img img,
+.ferrari_img img,
+.bentley_img img,
+.bmw_img img
+{
+  width: 50%;
+  
+}
+
+.title_button_cars
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.name
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:end;
+}
+.name p
+{
+    font-size: 100px;
+    color: white;
+    font-family: var(--body-family);
+}
+.button_cars
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_cars button
+{
+  width: 300px;
+  height: 75px;
+  transition: 300ms;
+  border: 2px solid white;
+  background-color: black;
+}
+
+.button_cars button pre
+{
+  color: white;
+  font-family: var(--body-family);
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.bentley_container {
+    height: 19%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+  }
+
+.bentley_container .name p
+{
+    color: black;
+}
+.bentley_container .button_cars button
+{
+  border: 2px solid black;
+  background-color: white;
+}
+.bentley_container .button_cars button pre
+{
+  color: #000000;
+  font-weight: 500;
+}
+
+.ferrari_img
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ferrari_container {
+    height: 19%;
+    background: #FFFF01;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+}
+
+.ferrari_container .name p
+{
+    color: black;
+}
+.ferrari_container .button_cars button
+{
+  border: 2px solid black;
+  background-color: transparent;
+}
+.ferrari_container .button_cars button pre
+{
+  color: #000000;
+  font-weight: 500;
+}
+
+
+.toyota_img
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.toyota_container {
+    height: 19%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+}
+
+.toyota_container .name p
+{
+    color: black;
+    font-weight: 500;
+}
+.toyota_container .button_cars button
+{
+  border: 2px solid black;
+  background-color: transparent;
+}
+.toyota_container .button_cars button pre
+{
+  color: #000000;
+  font-weight: 500;
+}
+
+.audi_img
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.audi_container {
+    height: 19%;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+}
+
+.audi_container .name p
+{
+    color: white;
+    font-weight: 500;
+}
+.audi_container .button_cars button
+{
+  border: 2px solid rgb(255, 255, 255);
+  background: black;
+  background-color: transparent;
+}
+.audi_container .button_cars button pre
+{
+  color: white;
+  font-weight: 500;
+}
+
+footer{
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #DEDEDE;
+}
+.web_name{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.web_name p{
+  font-size: 50px;
+  font-weight: 500px;
+  color:#000000
+}
+.author{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+.nombre , .correo, .telefono
+{
+  margin: 0px 40px 0px 40px;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.bentley_container {
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+  }
+  
+  .bentley_img
+  {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bentley_img img
+  {
+    width: 50%;
+    
+  }
+  
+
+
+
+@media (max-width: 968px) {
+  .navbar {
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      padding: 5px;
+  }
+
+  .options {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .options a {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+  .title-container {
+    width: 80%; 
+    height: 50%;
+    max-width: 600px; 
+    height: auto;
+    position: relative;
+    margin: 0 auto 10rem auto; 
+    text-align: center; 
+  }
+
+  .title-container .title {
+    padding: 100px 0px 0px 0px;
+    font-size: 40px; 
+    letter-spacing: 0.5em;
+    line-height: 1.2;
+  }
+
+  .title-container .title-principal,
+  .title-container .title-secondary {
+    font-size: 40px; 
+    letter-spacing: 0.5em; 
+    line-height: 1.2; 
+  }
+  .h1-container {
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size:26px;
+    font-weight: 500; 
+  }
+  .button_container button
+  {
+    font-size: 12px;
+  }
+  .img_container:hover h2{
+    font-size: 15px;
+  }
+ 
+  .bentley_container,
+  .audi_container,
+  .toyota_container,
+  .ferrari_container,
+  .bmw_container {
+    flex-direction: column;
+  }
+ 
+.author{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.toyota_img,
+.audi_img,
+.ferrari_img,
+.bentley_img,
+.bmw_img
+{
+  width: 100%;
+  height: 50%;
+}
+
+.bmw_img img
+{
+    height: 50%;
+    width: 25%;
+}
+
+.title_button_cars
+{
+  width: 100%;
+  height: 50%;
+}
+}
